@@ -1,7 +1,0 @@
-# Change escape key to `ctrl+j`
-escape ^Ff
-# Always start with 1
-bind c screen 1
-bind ^c screen 1
-bind 0 select 10                                                            
-screen 1

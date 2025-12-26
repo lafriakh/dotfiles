@@ -1,1 +1,0 @@
-plugins=(git sudo debian cp systemd npm npx yarn go vagrant laravel5 docker)

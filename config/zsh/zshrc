@@ -1,4 +1,0 @@
-source $HOME/.dotfiles/config/zsh/zshrc_functions
-source $HOME/.dotfiles/config/zsh/zshrc_paths
-source $HOME/.dotfiles/config/zsh/zshrc_alias
-source $HOME/.dotfiles/config/zsh/zshrc_plugins
