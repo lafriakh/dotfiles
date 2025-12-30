@@ -9,6 +9,12 @@ return {
 	config = function()
 		require("neo-tree").setup({
 			default_component_configs = {
+				name = {
+					use_git_status_colors = false,
+				},
+				git_status = {
+					highlight = "Normal",
+				},
 				container = {
 					enable_character_fade = true,
 					width = "100%",

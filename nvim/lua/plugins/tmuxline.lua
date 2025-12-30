@@ -21,6 +21,32 @@ return {
 			vim.g.tmuxline_theme = vim.g.simple_tmuxline_palette
 		end
 
+		local function catppuccin()
+			local mocha = require("catppuccin.palettes").get_palette("latte")
+			local fg = mocha.text
+			local bg = mocha.base
+			local visual = mocha.base
+
+			local palette = {
+				-- Left Side
+				a = { fg, visual, "bold" }, -- Session: BG text on Brown
+				b = { fg, visual }, -- Info: FG text on Visual Grey
+				c = { fg, bg }, -- Main Bar: FG text on BG
+
+				-- Right Side
+				x = { fg, visual },
+				y = { fg, visual },
+				z = { fg, visual, "bold" }, -- Host: BG text on Brown
+
+				-- Windows
+				win = { fg, bg }, -- Inactive: Grey text on BG
+				cwin = { bg, fg, "bold" }, -- Active: BG text on FG (Inverted)
+				bg = { fg, bg },
+			}
+
+			vim.g.tmuxline_theme = palette
+		end
+
 		-- Everforest
 		local function everforest()
 			local bg_mode = vim.g.everforest_background or "dark"
@@ -57,6 +83,6 @@ return {
 			end
 		end
 
-		simple()
+		catppuccin()
 	end,
 }

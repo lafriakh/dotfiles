@@ -33,6 +33,9 @@ return {
 
 			-- Setup
 			telescope.setup({
+				defaults = {
+					path_display = { "filename_first" },
+				},
 				pickers = {
 					buffers = {
 						initial_mode = "normal", -- 👈 start in normal mode for buffers picker

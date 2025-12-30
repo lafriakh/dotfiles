@@ -82,7 +82,7 @@ return {
 			vim.keymap.set("n", "<M-l>", function()
 				local filetype = vim.bo.filetype
 
-				if filetype == "javascript" or filetype == "typescript" then
+				if filetype == "javascript" or filetype == "typescript" or filetype == "typescriptreact" then
 					vim.lsp.buf.code_action({
 						apply = true,
 						context = {

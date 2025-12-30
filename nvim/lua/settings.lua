@@ -53,6 +53,11 @@ vim.keymap.set("n", "<leader>n", function()
 	end)
 end, { desc = "Next Diagnostic" })
 
+-- Search current buffer
+vim.keymap.set({ "n", "i" }, "<M-f>", function()
+	vim.keymap.set("n", "<M-f>", "/")
+end, { desc = "Search current buffer" })
+
 -- =========================== GLOBAL KEYMAPS ===========================
 -- Note: there are individual keymaps that have been set in the plugins
 -- as well, such as in the lsp-config.lua and git.lua files.
